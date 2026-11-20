@@ -13,6 +13,7 @@ public class QuestEntity {
         this.status = status;
         this.xp = xp;
         this.createdBy = createdBy;
+        //testvariabe
     }
 
     public String getTitle() {return title;}
