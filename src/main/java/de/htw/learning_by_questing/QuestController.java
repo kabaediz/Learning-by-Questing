@@ -1,5 +1,6 @@
 package de.htw.learning_by_questing;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -7,6 +8,7 @@ import java.util.List;
 
 @RestController
 public class QuestController {
+    @CrossOrigin
     @GetMapping("/quests")
     public List<QuestEntity> index() {
         return List.of(
